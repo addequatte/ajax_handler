@@ -1,6 +1,6 @@
 $(function(){
  	$(document).on('submit', '.form_ajax', function(){
-		var url = $(this).attr('action');
+	var url = $(this).attr('action');
         var type = $(this).attr('method');
         var data = $(this).serialize();
         var alert = $(this).attr('data-alert');
