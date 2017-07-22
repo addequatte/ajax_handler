@@ -3,7 +3,7 @@ $(function(){
 	var url = $(this).attr('action');
         var type = $(this).attr('method');
         var data = $(this).serialize();
-        var alert = $(this).attr('data-alert');
+        var doAlert = $(this).attr('data-alert');
         var destiny = $(this).attr('data-destiny');
         var destinyType =  $(this).attr('data-destiny-type');
        	$.ajax({
@@ -11,7 +11,7 @@ $(function(){
             type: type,
             data: data,
             success: function(res){
-            	if(alert == 'true')
+            	if(doAlert == 'true')
                 	alert(res);
                 if(res)
                 	if(destiny)
